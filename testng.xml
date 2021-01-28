@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="1kosmossuite">
+  <test name="1kosmostest">
+  		
+	 <classes>
+	 	<class name="com.qa.test.RestAPITest">
+	 		<methods>
+	 			<include name="RestAPITest1">
+	 			</include>	 			 
+	 			<include name="RestAPITest2">
+		 			<parameter name="key" value="tenant"/>
+		 			<parameter name="value" value="1kosmos"/>
+		 			<parameter name="validateResponseFile" value="validateresponse.json"/>
+				</include>
+	 		</methods>
+	 	</class>
+	 </classes>
+  </test>  
+  </suite>
